@@ -16,6 +16,7 @@ public class TeamService {
     private TeamRepo teamRepo;
 
     public List<TeamDetails> GetallDetailsOfteam(){
+        System.out.println("Team repo called");
         return teamRepo.findAll();
     }
 

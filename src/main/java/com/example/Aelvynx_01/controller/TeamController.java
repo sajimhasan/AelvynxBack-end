@@ -10,12 +10,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/team")
+@CrossOrigin("*")
 public class TeamController {
     @Autowired
     private TeamService service;
 
     @GetMapping("/whole")
     public List<TeamDetails> getAll(){
+        System.out.println("whole details called");
         return service.GetallDetailsOfteam();
     }
 
