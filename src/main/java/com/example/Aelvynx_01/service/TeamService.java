@@ -28,7 +28,8 @@ public class TeamService {
                 .map(details -> new TeamPub(
                         details.getUsersId(),
                         details.getFullName(),
-                        details.getPosition()
+                        details.getPosition(),
+                        details.getImage()
                 ))
                 .toList();
     }

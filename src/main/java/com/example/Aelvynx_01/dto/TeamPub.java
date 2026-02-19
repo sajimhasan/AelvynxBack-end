@@ -12,4 +12,5 @@ public class TeamPub {
     private UUID usersId;
     private String fullName;
     private String position;
+    private String image;
 }
